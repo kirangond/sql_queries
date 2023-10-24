@@ -1,0 +1,174 @@
+
+Github commands
+
+- already a repo there in github 
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project
+$ git init
+Initialized empty Git repository in C:/sql_project/.git/
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project (master)
+$ git clone https://github.com/kirangond/sql_queries.git
+Cloning into 'sql_queries'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 17 (delta 3), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (17/17), 6.01 KiB | 83.00 KiB/s, done.
+Resolving deltas: 100% (3/3), done.
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sql_queries/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project (master)
+$ git branch
+
+
+after wards go inside the C:\sql_project\sql_queries and open the git bash 
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git branch
+* master
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    sql-queries.sql
+        deleted:    sql_notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sql-queries.sql
+        modified:   sql_notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git add .
+warning: LF will be replaced by CRLF in sql-queries.sql.
+The file will have its original line endings in your working directory
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sql-queries.sql
+        modified:   sql_notes.txt
+
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git commit -m 'deleted old files and added new file'
+[master 75ed797] deleted old files and added new file
+ 2 files changed, 17 insertions(+), 2 deletions(-)
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git log
+commit 75ed797afe82a30338a5ae2e1019724330cbd83c (HEAD -> master)
+Author: kirangond <kirangond05@gmail.com>
+Date:   Tue Oct 24 16:05:52 2023 +0530
+
+    deleted old files and added new file
+
+commit 38bca53adbb6be566b224dc7e933497bd7f0415f (origin/master, origin/HEAD)
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Tue Oct 24 13:47:24 2023 +0530
+
+    sql notes file added
+
+commit 2ee8f2737951ed666d01c48d0f4ddefdbad39a77
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Tue Oct 24 13:47:01 2023 +0530
+
+    uploaded a new sql query file
+
+commit 12648ef87918f3130c8805ea39591047fa075a21
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Tue Oct 24 13:46:18 2023 +0530
+
+    Delete sql-queries.sql old file
+
+commit 7a77337cbae8ff26a8f7588a718675ae875621ad (origin/october_queries)
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Mon Oct 23 16:37:58 2023 +0530
+
+    added a file with sql queries
+
+commit c14e22270836f8fe225b5f9b1a215c92a0995093
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Mon Oct 23 16:32:44 2023 +0530
+
+    Delete sql-queries.sql file
+
+commit 1ccb8ca404750540737c74efd0eaec3561e1fd50
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Mon Oct 23 16:20:24 2023 +0530
+
+    added the sql files.
+
+commit 49583d3846f16cb3ce2f2a1d97b884b16a5e999f
+Author: Kirangond Mehtre <kirangond05@gmail.com>
+Date:   Fri Oct 20 23:28:06 2023 +0530
+
+    Initial commit
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git push origin -u master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 620 bytes | 620.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kirangond/sql_queries.git
+   38bca53..75ed797  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/sql_project/sql_queries (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
