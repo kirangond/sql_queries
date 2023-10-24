@@ -184,3 +184,10 @@ select * from student_info;
 --to delete a column
 alter table student_info 
 drop column email;
+
+--second maximum salary
+select MAX(esalary) from student_info;
+
+select MAX(esalary) from student_info where esalary<
+(select MAX(esalary) from student_info);
+

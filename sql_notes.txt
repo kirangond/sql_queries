@@ -62,3 +62,11 @@ Built in functions
  delete a column
  
  length
+ 
+ Lecure 3
+ sub query - query within query
+ Inner query execute first and result of inner query passed to outer query
+ when ever we want to compare 2 tables then there should be one column matching in both tables 
+ 
+ second maximum salary 
+ 
