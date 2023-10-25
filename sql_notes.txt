@@ -1,0 +1,72 @@
+
+oct 20 
+
+Lecture 1 
+ - DB  - To store data permanently and in structured way.
+ 
+ to interact with database to check entered details from the form are stored or not
+ 
+ Xampp - cross platform, apache, mysql, php my admin
+ 
+ DB - sql_database
+ Table - student_info
+ port number by default for mysql - 3306 
+ 80443 - apache
+ 
+ area allocated for software to permanently run
+ 
+ String - varchar
+ Integer - int 
+ 
+ select
+  from 
+   where 
+    group by 
+	  having
+	    order by 
+		  
+Built in functions
+ max
+ min
+ avg
+ sum
+ count
+ 
+ Oct 23 
+ ucase
+ lcase
+ 
+ 
+ oct 24
+ 
+ Lecture 2 
+ only top and bottom 2 records
+ now()
+ alias - as 
+ 
+ wild cards
+ like
+ 
+ delete
+ 
+ drop
+ 
+ concat()
+ trim()
+ ltrim()
+ rtrim()
+ 
+ increment/decrement
+ add new column last, first and in betweeen
+ 
+ delete a column
+ 
+ length
+ 
+ Lecure 3
+ sub query - query within query
+ Inner query execute first and result of inner query passed to outer query
+ when ever we want to compare 2 tables then there should be one column matching in both tables 
+ 
+ second maximum salary 
+ 
