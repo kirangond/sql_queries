@@ -69,4 +69,19 @@ Built in functions
  when ever we want to compare 2 tables then there should be one column matching in both tables 
  
  second maximum salary 
+ lecture 4 Oct 25
+ Data types
  
+ Create a table
+ Insert 
+ 
+ Lecture 5 Oct 26 
+ 
+ Constraints
+ 
+ not null
+ uique
+ primary key
+ foriegn key
+ enum
+ set 
