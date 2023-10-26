@@ -226,3 +226,8 @@ course set('java','testig','devops')
 
 show tables;
 desc student;
+
+insert into student values
+(1,'kiran','M',"1997-10-22",'8123159012','bhalki','java,devops');
+
+select * from student;
