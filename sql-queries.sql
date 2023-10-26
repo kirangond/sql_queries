@@ -191,3 +191,38 @@ select MAX(esalary) from student_info;
 select MAX(esalary) from student_info where esalary<
 (select MAX(esalary) from student_info);
 
+--give me the employe name who got incentive using sub query concepts
+
+--data type and create and insert into table
+
+create table employee (ename varchar(10),eage int(10),edob date, egender enum('Female','Male'));
+select * from employee;
+--to show what type of data it will store in column table
+desc employee;
+
+--to insert values in to the table 
+insert into employee values
+('kiran',27,"1997/10/22",'Male');
+
+insert into employee values
+('rani',20,"1996/10/2",'Female');
+
+insert into employee values
+('pak',29,"1995/05/10",'neutral');
+
+select now() as timestamp;
+
+--create a table with constrints and insert into it 
+
+create table student(
+sid int(10) primary key,
+sname varchar(20) not null,
+sgender enum('F','M'),
+dob date not null,
+phno varchar(20) unique,
+location varchar(10),
+course set('java','testig','devops')
+);
+
+show tables;
+desc student;
