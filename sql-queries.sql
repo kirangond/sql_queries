@@ -231,3 +231,35 @@ insert into student values
 (1,'kiran','M',"1997-10-22",'8123159012','bhalki','java,devops');
 
 select * from student;
+
+
+
+create database information;
+use information;
+show tables;
+
+create table employee(
+empid int(10) primary key,
+ename varchar(20) not null,
+ecity varchar(20));
+
+select * from employee;
+desc employee;
+
+create table attendance
+(aid int(10) not null,
+eattedance varchar(10),
+FOREIGN KEY(aid) references employee(empid));
+
+select * from attendance;
+desc attendance;
+
+---Joins----
+insert into employee values (100,'kiran','bbhalki');
+--insert multiple records--
+insert into employee values (103,'raj','bidar'),(104,'keerti','mysore');
+
+insert into attendance values (102,'no'),(103,'no');
+
+select employee.empid, employee.ename, attendance.eattedance
+from employee inner join attendance on employee.empid=attendance.aid;

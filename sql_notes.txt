@@ -86,3 +86,23 @@ Built in functions
  enum
  set 
 
+ Lecture 7
+ Foriegn key 
+ 
+ Lecture 8
+ Joins 
+ 
+100	yes
+101	no
+102	no
+103	no
+
+100	kiran	bbhalki
+101	pavan	bidar
+102	rahul	hunji
+103	raj	bidar
+104	keerti	mysore
+ 
+ ---Inner join---
+ select table1.column1, table1.column2, table3.column1, table3.column4
+ from table1 inner join table2 on condition;
