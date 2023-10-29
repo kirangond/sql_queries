@@ -106,3 +106,8 @@ Built in functions
  ---Inner join---
  select table1.column1, table1.column2, table3.column1, table3.column4
  from table1 inner join table2 on condition;
+
+left join
+right join
+Cartesian join
+
