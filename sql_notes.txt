@@ -111,3 +111,33 @@ left join
 right join
 Cartesian join
 
+
+--left join--
+ --write a query to get ename, ecity from employee.. aid, eattedance from attendance based on id, fetch all the records from employee(left table)
+ 
+ select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
+ from employee left join attendance on employee.empid = attendance.aid;
+ 
+ kiran	bbhalki	100	yes
+pavan	bidar	101	no
+rahul	hunji	102	no
+raj	bidar	103	no
+keerti	mysore		
+
+ --right join 
+ --write a query to get ename, ecity from employee.. aid, eattedance from attendance based on id, fetch all the records from attendance(right table)
+ 
+ select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
+ from employee right join attendance on employee.empid = attendance.aid;
+
+
+kiran	bbhalki	100	yes
+pavan	bidar	101	no
+rahul	hunji	102	no
+raj	bidar	103	no
+
+
+ --cartesian join
+  select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
+ from employee, attendance;
+

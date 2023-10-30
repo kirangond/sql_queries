@@ -263,3 +263,20 @@ insert into attendance values (102,'no'),(103,'no');
 
 select employee.empid, employee.ename, attendance.eattedance
 from employee inner join attendance on employee.empid=attendance.aid;
+
+--left join--
+ --write a query to get ename, ecity from employee.. aid, eattedance from attendance based on id, fetch all the records from employee(left table)
+ 
+ select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
+ from employee left join attendance on employee.empid = attendance.aid;
+ 
+ --right join 
+ --write a query to get ename, ecity from employee.. aid, eattedance from attendance based on id, fetch all the records from attendance(right table)
+ 
+ select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
+ from employee right join attendance on employee.empid = attendance.aid;
+ 
+ --cartesian join
+  select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
+ from employee, attendance;
+ 
