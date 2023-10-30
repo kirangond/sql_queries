@@ -140,4 +140,6 @@ raj	bidar	103	no
  --cartesian join
   select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
  from employee, attendance;
+ 
+ 
 

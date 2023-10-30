@@ -280,3 +280,12 @@ from employee inner join attendance on employee.empid=attendance.aid;
   select employee.ename, employee.ecity, attendance.aid, attendance.eattedance
  from employee, attendance;
  
+ --birth date in 2000---
+  select now(); -- current time 
+  select year(now()); --only select year 
+  select month(now()); --only month
+  
+  select day(now());
+  select hour(now());
+  
+ 
